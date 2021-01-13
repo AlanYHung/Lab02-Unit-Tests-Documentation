@@ -25,10 +25,10 @@ namespace Fake_ATM_Test
         [InlineData(600.00)]
         [InlineData(100.00)]
         [InlineData(50.00)]
-        public void testWithdraw(decimal withdrawAmt)
+        public void testDeposit(decimal depositAmt)
         {
-            decimal newBalance = Program.Balance - withdrawAmt;
-            Assert.Equal(newBalance, Program.Withdraw(withdrawAmt));
+            decimal newBalance = Program.Balance + depositAmt;
+            Assert.Equal(newBalance, Program.Deposit(depositAmt));
         }
 
         [Theory]
@@ -36,10 +36,18 @@ namespace Fake_ATM_Test
         [InlineData(600.00)]
         [InlineData(100.00)]
         [InlineData(50.00)]
-        public void testDeposit(decimal depositAmt)
+        public void testWithdraw(decimal withdrawAmt)
         {
-            decimal newBalance = Program.Balance + depositAmt;
-            Assert.Equal(newBalance, Program.Deposit(depositAmt));
+            decimal newBalance = Program.Balance - withdrawAmt;
+
+            if(newBalance < 0)
+            {
+                Assert.Equal(Program.Balance, Program.Withdraw(withdrawAmt));
+            }
+            else
+            {
+                Assert.Equal(newBalance, Program.Withdraw(withdrawAmt));
+            }
         }
     }
 }

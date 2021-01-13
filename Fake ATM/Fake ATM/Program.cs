@@ -10,10 +10,12 @@ namespace Fake_ATM
             string userInput;
             string withdrawAmount;
             string depositAmount;
+            string moreTransactions = "y";
 
             do
             {
                 Console.Clear();
+                Console.WriteLine("Welcome to C# ATM Solutions.  What would you like to do today?\n");
                 Console.WriteLine("1. View Balance");
                 Console.WriteLine("2. Withdraw");
                 Console.WriteLine("3. Deposit");
@@ -24,8 +26,10 @@ namespace Fake_ATM
                 switch(userInput)
                 {
                     case "1":
-                        Console.Write("Your current balance is: ");
                         Balance = ViewBalance();
+                        Console.Write("Your current balance is: " + Balance);
+                        Console.Write("\n\nPlease press ENTER to continue...");
+                        Console.ReadKey();
                         break;
                     case "2":
                         Console.WriteLine("How much would you like to withdraw?");
@@ -37,11 +41,28 @@ namespace Fake_ATM
                         depositAmount = Console.ReadLine();
                         Balance = Deposit(Convert.ToDecimal(depositAmount));
                         break;
+                    case "4":
+                        break;
                     default:
                         Console.WriteLine("Invalid Input.  Please choose a value between 1-4.");
+                        Console.Write("\n\nPlease press ENTER to continue...");
+                        Console.ReadKey();
                         break;
                 }
-            } while (userInput != "4");
+
+                if(userInput != "4")
+                {
+                    Console.Clear();
+                    Console.WriteLine("Would you like to make another transaction? (y/n)");
+                    moreTransactions = Console.ReadLine();
+                }
+
+                if((userInput == "4") || (moreTransactions == "n") || (moreTransactions == "N"))
+                {
+                    Console.Clear();
+                    Console.WriteLine("Thank you for using our ATM.  Have a nice day.");
+                }
+            } while ((userInput == "4") && (moreTransactions == "n") && (moreTransactions == "N"));
         }
 
         public static decimal ViewBalance()
@@ -55,18 +76,22 @@ namespace Fake_ATM
 
             if (withdrawAmt > 0)
             {
-                if(newWBalance - withdrawAmt > 0)
+                if(newWBalance - withdrawAmt >= 0)
                 {
                     newWBalance = Balance - withdrawAmt;
                 }
                 else
                 {
                     Console.WriteLine("Unable to withdraw.  Insufficient Balance.");
+                    Console.Write("\n\nPlease press ENTER to continue...");
+                    Console.ReadKey();
                 }
             }
             else
             {
-                Console.WriteLine("Unable to withdraw a negative amount.");
+                Console.WriteLine("Unable to withdraw a negative or zero amount.");
+                Console.Write("\n\nPlease press ENTER to continue...");
+                Console.ReadKey();
             }
 
             return newWBalance;
@@ -83,6 +108,8 @@ namespace Fake_ATM
             else
             {
                 Console.WriteLine("Unable to deposit a negative amount.");
+                Console.Write("\n\nPlease press ENTER to continue...");
+                Console.ReadKey();
             }
 
             return newDBalance;
