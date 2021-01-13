@@ -9,11 +9,11 @@
 * Click Run
 
 ### Example
-*![](./Fake%20ATM/assets/mainmenu.PNG)
-*![](./Fake%20ATM/assets/viewbalance.PNG)
-*![](./Fake%20ATM/assets/withdraw.PNG)
-*![](./Fake%20ATM/assets/deposit.PNG)
-*![](./Fake%20ATM/assets/exit.PNG)
+*![](./Fake%20ATM/Fake%20ATM/assets/mainmenu.PNG)
+*![](./Fake%20ATM/Fake%20ATM/assets/viewbalance.PNG)
+*![](./Fake%20ATM/Fake%20ATM/assets/withdraw.PNG)
+*![](./Fake%20ATM/Fake%20ATM/assets/deposit.PNG)
+*![](./Fake%20ATM/Fake%20ATM/assets/exit.PNG)
 
 ### Change Log
 * 0.0.1 - 1/12/2021 3:00pm - Set up initial repo
