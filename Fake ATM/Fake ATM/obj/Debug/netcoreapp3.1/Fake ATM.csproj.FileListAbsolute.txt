@@ -1,0 +1,13 @@
+C:\Users\AlanY\Documents\Projects\Code Fellows 401\lab02-ATM\Fake ATM\Fake ATM\bin\Debug\netcoreapp3.1\Fake ATM.exe
+C:\Users\AlanY\Documents\Projects\Code Fellows 401\lab02-ATM\Fake ATM\Fake ATM\bin\Debug\netcoreapp3.1\Fake ATM.deps.json
+C:\Users\AlanY\Documents\Projects\Code Fellows 401\lab02-ATM\Fake ATM\Fake ATM\bin\Debug\netcoreapp3.1\Fake ATM.runtimeconfig.json
+C:\Users\AlanY\Documents\Projects\Code Fellows 401\lab02-ATM\Fake ATM\Fake ATM\bin\Debug\netcoreapp3.1\Fake ATM.runtimeconfig.dev.json
+C:\Users\AlanY\Documents\Projects\Code Fellows 401\lab02-ATM\Fake ATM\Fake ATM\bin\Debug\netcoreapp3.1\Fake ATM.dll
+C:\Users\AlanY\Documents\Projects\Code Fellows 401\lab02-ATM\Fake ATM\Fake ATM\bin\Debug\netcoreapp3.1\Fake ATM.pdb
+C:\Users\AlanY\Documents\Projects\Code Fellows 401\lab02-ATM\Fake ATM\Fake ATM\obj\Debug\netcoreapp3.1\Fake ATM.csprojAssemblyReference.cache
+C:\Users\AlanY\Documents\Projects\Code Fellows 401\lab02-ATM\Fake ATM\Fake ATM\obj\Debug\netcoreapp3.1\Fake ATM.AssemblyInfoInputs.cache
+C:\Users\AlanY\Documents\Projects\Code Fellows 401\lab02-ATM\Fake ATM\Fake ATM\obj\Debug\netcoreapp3.1\Fake ATM.AssemblyInfo.cs
+C:\Users\AlanY\Documents\Projects\Code Fellows 401\lab02-ATM\Fake ATM\Fake ATM\obj\Debug\netcoreapp3.1\Fake ATM.csproj.CoreCompileInputs.cache
+C:\Users\AlanY\Documents\Projects\Code Fellows 401\lab02-ATM\Fake ATM\Fake ATM\obj\Debug\netcoreapp3.1\Fake ATM.dll
+C:\Users\AlanY\Documents\Projects\Code Fellows 401\lab02-ATM\Fake ATM\Fake ATM\obj\Debug\netcoreapp3.1\Fake ATM.pdb
+C:\Users\AlanY\Documents\Projects\Code Fellows 401\lab02-ATM\Fake ATM\Fake ATM\obj\Debug\netcoreapp3.1\Fake ATM.genruntimeconfig.cache
