@@ -62,7 +62,7 @@ namespace Fake_ATM
                     Console.Clear();
                     Console.WriteLine("Thank you for using our ATM.  Have a nice day.");
                 }
-            } while ((userInput == "4") && (moreTransactions == "n") && (moreTransactions == "N"));
+            } while ((userInput != "4") && (moreTransactions != "n") && (moreTransactions != "N"));
         }
 
         public static decimal ViewBalance()
